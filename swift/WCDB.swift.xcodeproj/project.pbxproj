@@ -7,17 +7,6 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		2349FC211FDF86F9005230E8 /* Swiftlint */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 2349FC251FDF86F9005230E8 /* Build configuration list for PBXAggregateTarget "Swiftlint" */;
-			buildPhases = (
-				2349FC261FDF870A005230E8 /* Swiftlint */,
-			);
-			dependencies = (
-			);
-			name = Swiftlint;
-			productName = Swiftlint;
-		};
 		23A1FF731FB08C780023527D /* Install templates */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 23A1FF741FB08C780023527D /* Build configuration list for PBXAggregateTarget "Install templates" */;
@@ -162,13 +151,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 239325C71E836A7700D677CC;
 			remoteInfo = sqlcipher;
-		};
-		2349FC271FDF871F005230E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 238D0AFA1FAB1F4300BC2659 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2349FC211FDF86F9005230E8;
-			remoteInfo = Swiftlint;
 		};
 		23A1FF781FB08CC50023527D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -546,7 +528,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				2349FC281FDF871F005230E8 /* PBXTargetDependency */,
 				2321246020172A99008146EF /* PBXTargetDependency */,
 				2321245E20172A99008146EF /* PBXTargetDependency */,
 				23A1FF791FB08CC50023527D /* PBXTargetDependency */,
@@ -565,10 +546,6 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = sanhuazhang;
 				TargetAttributes = {
-					2349FC211FDF86F9005230E8 = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-					};
 					238D0B021FAB1F4300BC2659 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
@@ -604,7 +581,6 @@
 			targets = (
 				238D0B021FAB1F4300BC2659 /* WCDB.swift */,
 				23A1FF731FB08C780023527D /* Install templates */,
-				2349FC211FDF86F9005230E8 /* Swiftlint */,
 			);
 		};
 /* End PBXProject section */
@@ -637,20 +613,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2349FC261FDF870A005230E8 /* Swiftlint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Swiftlint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\n#    swiftlint --path ../tools/templates/xctemplates \nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
 		23A1FF771FB08C820023527D /* Install templates */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -705,8 +667,8 @@
 				238D0B931FAB1F7E00BC2659 /* StatementInsert.swift in Sources */,
 				238D0B9C1FAB1F7E00BC2659 /* StatementVacuum.swift in Sources */,
 				238D0B941FAB1F7E00BC2659 /* StatementPragma.swift in Sources */,
-				2302098E1FBED533000D69B6 /* Database.swift in Sources */,
 				230209C01FBEE3CC000D69B6 /* Convenience.swift in Sources */,
+				2302098E1FBED533000D69B6 /* Database.swift in Sources */,
 				238D0B851FAB1F7E00BC2659 /* Order.swift in Sources */,
 				231BC02F1FC2CC6E00011C69 /* TimedQueue.swift in Sources */,
 				238D0B831FAB1F7E00BC2659 /* LiteralValue.swift in Sources */,
@@ -784,11 +746,6 @@
 			name = sqlcipher;
 			targetProxy = 2321245F20172A99008146EF /* PBXContainerItemProxy */;
 		};
-		2349FC281FDF871F005230E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2349FC211FDF86F9005230E8 /* Swiftlint */;
-			targetProxy = 2349FC271FDF871F005230E8 /* PBXContainerItemProxy */;
-		};
 		23A1FF791FB08CC50023527D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 23A1FF731FB08C780023527D /* Install templates */;
@@ -797,22 +754,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2349FC221FDF86F9005230E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		2349FC231FDF86F9005230E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		238D0B091FAB1F4300BC2659 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1040,15 +981,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2349FC251FDF86F9005230E8 /* Build configuration list for PBXAggregateTarget "Swiftlint" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2349FC221FDF86F9005230E8 /* Debug */,
-				2349FC231FDF86F9005230E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		238D0AFD1FAB1F4300BC2659 /* Build configuration list for PBXProject "WCDB.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
